@@ -8,5 +8,6 @@
         "-e", "TZ=Africa/Cairo",
         "-e", "PUID=1000",
         "-e", "PGID=1000"
-    ]
+    ],
+    "postCreateCommand": "sudo apt update && sudo apt install -y fish konsole dolphin systemsettings && echo 'exec fish' >> ~/.bashrc"
 }
