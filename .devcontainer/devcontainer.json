@@ -2,8 +2,11 @@
     "name": "KDE Plasma Desktop",
     "image": "lscr.io/linuxserver/webtop:ubuntu-kde",
     "forwardPorts": [3000],
+    "overrideCommand": false,
     "runArgs": [
         "--shm-size=2g",
-        "-e", "TZ=Africa/Cairo"
+        "-e", "TZ=Africa/Cairo",
+        "-e", "PUID=1000",
+        "-e", "PGID=1000"
     ]
 }
